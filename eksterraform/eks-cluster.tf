@@ -25,12 +25,12 @@ POLICY
 }
 
 resource "aws_iam_role_policy_attachment" "demo-cluster-AmazonEKSClusterPolicy" {
-  policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
+  policy_arn = "arn:aws:iam::866679018980:role/terraform-jenkins-role"
   role       = aws_iam_role.demo-cluster.name
 }
 
 resource "aws_iam_role_policy_attachment" "demo-cluster-AmazonEKSServicePolicy" {
-  policy_arn = "arn:aws:iam::aws:policy/AmazonEKSServicePolicy"
+  policy_arn = "arn:aws:iam::866679018980:role/terraform-jenkins-role"
   role       = aws_iam_role.demo-cluster.name
 }
 
